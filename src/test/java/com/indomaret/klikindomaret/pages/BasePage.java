@@ -2,6 +2,7 @@ package com.indomaret.klikindomaret.pages;
 
 import com.indomaret.klikindomaret.utils.DriverUtils;
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.By;
@@ -48,6 +49,11 @@ public class BasePage {
         WebDriverWait wait = new WebDriverWait(DriverUtils.appiumDriver, Duration.ofSeconds(5));
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         return element.getText();
+    }
+
+    public void scrollToElement(String visibleText) {
+        DriverUtils.appiumDriver.findElement(AppiumBy.androidUIAutomator(
+                "new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"" + visibleText + "\").instance(0))"));
     }
 
     private By getLocator(String locatorType, String value) {

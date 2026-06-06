@@ -37,6 +37,7 @@ Feature: Order in Klik Indomaret
     And  User close the payment detail
 
     When User click Buy button
-#    Then User select virtual account as payment
+    Then User select virtual account as payment
+    And  User click Pay Now
 
 

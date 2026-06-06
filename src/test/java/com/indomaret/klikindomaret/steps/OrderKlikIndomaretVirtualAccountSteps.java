@@ -199,4 +199,14 @@ public class OrderKlikIndomaretVirtualAccountSteps extends ScenarioSteps {
     public void userClickBuyButton() {
         cartPage.clickBuyButton();
     }
+
+    @Then("User select virtual account as payment")
+    public void userSelectVirtualAccountAsPayment() {
+        cartPage.selectVirtualAccountPaymentBCA();
+    }
+
+    @And("User click Pay Now")
+    public void userClickPayNow() {
+        cartPage.clickPayNow();
+    }
 }
