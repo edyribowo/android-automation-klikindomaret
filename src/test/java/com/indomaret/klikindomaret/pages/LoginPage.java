@@ -27,5 +27,10 @@ public class LoginPage extends BasePage{
 
     public void clickMaybeLaterButton() {
         click(AppsConstant.LOCATOR_TYPE_ID, com.indomaret.klikindomaret.identifier.LoginPage.MAYBE_LATER);
+        if(isElementVisible(AppsConstant.LOCATOR_TYPE_XPATH,
+                com.indomaret.klikindomaret.identifier.LoginPage.NOT_NOW_PASSWORD_SAVE)) {
+            click(AppsConstant.LOCATOR_TYPE_XPATH,
+                    com.indomaret.klikindomaret.identifier.LoginPage.NOT_NOW_PASSWORD_SAVE);
+        }
     }
 }

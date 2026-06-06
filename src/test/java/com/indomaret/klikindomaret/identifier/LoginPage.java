@@ -7,4 +7,5 @@ public class LoginPage {
     public static final String PASSWORD = "//android.widget.EditText[@text=\"Kata Sandi\"]";
     public static final String LOGIN_BUTTON_NEXT = "com.indomaret.klikindomaret:id/5mp";
     public static final String MAYBE_LATER = "com.indomaret.klikindomaret:id/9t1";
+    public static final String NOT_NOW_PASSWORD_SAVE = "//android.widget.Button[@text='Not now']";
 }
