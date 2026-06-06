@@ -5,4 +5,7 @@ public class HomePage {
     public static final String NEXT_BUTTON_INFO_HOMEPAGE = "com.indomaret.klikindomaret:id/f0n";
     public static final String HOMEPAGE_TAB = "com.indomaret.klikindomaret:id/ckr";
     public static final String ACCOUNT_MENU = "com.indomaret.klikindomaret:id/ac4";
+    public static final String CLOSE_ADV_BUTTON = "com.indomaret.klikindomaret:id/58n";
+    public static final String SEARCH_BAR = "com.indomaret.klikindomaret:id/5rm";
+    public static final String SEARCH_BAR_INPUT = "//android.widget.EditText";
 }

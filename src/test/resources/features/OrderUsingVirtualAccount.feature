@@ -15,3 +15,28 @@ Feature: Order in Klik Indomaret
     And   User click login
     And   User click maybe later button
 
+    When  User click homepage banner
+    Then  User already in homepage
+
+    When  User click search in homepage
+    And   User search "Kara Minyak Goreng Kelapa 1L"
+    And   User click detail product "Kara Minyak Goreng Kelapa 1L"
+    And   User click add to cart in detail product page
+
+    And   User click cart icon
+    When  User click shipping type
+    Then  User select shipping type "Reguler - Pilih Waktu (Gratis)"
+    And   User select time "07.00 - 07.59"
+    And   User click confirm
+
+#    When  User click belanja xtra menu
+#    And   User click banner shipping xtra
+
+    When User expand the detail product
+    Then Verify the total payment is correct
+    And  User close the payment detail
+
+    When User click Buy button
+#    Then User select virtual account as payment
+
+

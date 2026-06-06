@@ -29,4 +29,28 @@ public class KlikIndomaretHomepage extends BasePage{
     public boolean isUserInAccountPage() {
         return isElementVisible(AppsConstant.LOCATOR_TYPE_ID, LoginPage.LOGIN_BUTTON);
     }
+
+    public void clickHomepagaBanner() {
+        click(AppsConstant.LOCATOR_TYPE_ID, HomePage.HOMEPAGE_TAB);
+    }
+
+    public void clickCloseAdv() {
+        if(isElementVisible(AppsConstant.LOCATOR_TYPE_ID, HomePage.CLOSE_ADV_BUTTON)) {
+            click(AppsConstant.LOCATOR_TYPE_ID, HomePage.CLOSE_ADV_BUTTON);
+        }
+    }
+
+    public void clickSearchBar() {
+        click(AppsConstant.LOCATOR_TYPE_ID, HomePage.SEARCH_BAR);
+    }
+
+    public void userSearchProduct(String searchValue) {
+        typeAndEnter(AppsConstant.LOCATOR_TYPE_XPATH, HomePage.SEARCH_BAR_INPUT, searchValue);
+    }
+
+    public void userClickDetailProduct(String searchValue) {
+        String xpath = "//android.widget.TextView[@resource-id=\"com.indomaret.klikindomaret:id/gsu\" " +
+                "and @text='"+ searchValue+"']";
+        click(AppsConstant.LOCATOR_TYPE_XPATH, xpath);
+    }
 }

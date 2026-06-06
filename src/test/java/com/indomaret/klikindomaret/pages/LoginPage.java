@@ -17,7 +17,7 @@ public class LoginPage extends BasePage{
     }
 
     public void inputPassword(String password) {
-        sendKeys(AppsConstant.LOCATOR_TYPE_ID,
+        sendKeys(AppsConstant.LOCATOR_TYPE_XPATH,
                 com.indomaret.klikindomaret.identifier.LoginPage.PASSWORD, password);
     }
 

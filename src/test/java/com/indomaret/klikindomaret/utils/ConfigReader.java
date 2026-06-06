@@ -20,6 +20,6 @@ public class ConfigReader {
     }
 
     public static String get(String key) {
-        return properties.get(key).toString();
+        return properties.getProperty(key);
     }
 }

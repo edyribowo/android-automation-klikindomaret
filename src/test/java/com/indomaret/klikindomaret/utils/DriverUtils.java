@@ -20,6 +20,11 @@ public class DriverUtils {
         desiredCapabilities.setCapability("appium:appPackage", org.example.utils.ConfigReader.get("appPackage"));
         desiredCapabilities.setCapability("appium:appActivity", org.example.utils.ConfigReader.get("appActivity"));
 
+        String noReset = org.example.utils.ConfigReader.get("noReset");
+        if (noReset != null) {
+            desiredCapabilities.setCapability("appium:noReset", Boolean.parseBoolean(noReset));
+        }
+
         appiumDriver = new AppiumDriver(new URL(org.example.utils.ConfigReader.get("appiumURL")), desiredCapabilities);
     }
 
