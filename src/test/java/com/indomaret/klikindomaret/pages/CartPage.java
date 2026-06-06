@@ -12,8 +12,8 @@ public class CartPage extends BasePage {
         if(isElementVisible(AppsConstant.LOCATOR_TYPE_XPATH, CartPageIdentifier.CLOSE_POP_UP))
             click(AppsConstant.LOCATOR_TYPE_XPATH, CartPageIdentifier.CLOSE_POP_UP);
 
-        if(isElementVisible(AppsConstant.LOCATOR_TYPE_XPATH, CartPageIdentifier.CLOSE_POP_UP_BOX))
-            click(AppsConstant.LOCATOR_TYPE_XPATH, CartPageIdentifier.CLOSE_POP_UP_BOX);
+        if(isElementVisible(AppsConstant.LOCATOR_TYPE_ID, CartPageIdentifier.CLOSE_POP_UP_BOX))
+            click(AppsConstant.LOCATOR_TYPE_ID, CartPageIdentifier.CLOSE_POP_UP_BOX);
 
         click(AppsConstant.LOCATOR_TYPE_ID, CartPageIdentifier.SHIPPING_TYPE_MENU);
     }
@@ -87,5 +87,9 @@ public class CartPage extends BasePage {
 
     public void clickPayNow() {
         click(AppsConstant.LOCATOR_TYPE_ID, CartPageIdentifier.PAY_NOW_BUTTON);
+    }
+
+    public void skipPromo() {
+        click(AppsConstant.LOCATOR_TYPE_ID, CartPageIdentifier.SKIP_PROMO);
     }
 }

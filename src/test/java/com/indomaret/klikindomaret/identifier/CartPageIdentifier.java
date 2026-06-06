@@ -16,7 +16,8 @@ public class CartPageIdentifier {
     public static final String CLOSE_PAYMENT_BUTTON = "com.indomaret.klikindomaret:id/52r";
     public static final String BUY_BUTTON = "com.indomaret.klikindomaret:id/frj";
     public static final String CLOSE_POP_UP = "//android.widget.FrameLayout[@resource-id=\"com.indomaret.klikindomaret:id/52r\"]/android.widget.ImageView";
-    public static final String CLOSE_POP_UP_BOX = "//*[@text='Tutup']";
+    public static final String CLOSE_POP_UP_BOX = "com.indomaret.klikindomaret:id/f0n";
     public static final String BRIVA = "702";
     public static final String PAY_NOW_BUTTON = "payButton";
+    public static final String SKIP_PROMO = "com.indomaret.klikindomaret:id/156";
 }

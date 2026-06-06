@@ -198,6 +198,7 @@ public class OrderKlikIndomaretVirtualAccountSteps extends ScenarioSteps {
     @When("User click Buy button")
     public void userClickBuyButton() {
         cartPage.clickBuyButton();
+        cartPage.skipPromo();
     }
 
     @Then("User select virtual account as payment")
