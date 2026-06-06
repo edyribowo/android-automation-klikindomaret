@@ -10,4 +10,11 @@ public class DetailProductPage extends BasePage {
     public void clickCartIcon() {
         click(AppsConstant.LOCATOR_TYPE_ID, com.indomaret.klikindomaret.identifier.DetailProductPage.CART_ICON);
     }
+
+    public void deleteExistingCart() {
+        if(isElementVisible(AppsConstant.LOCATOR_TYPE_ID,
+                com.indomaret.klikindomaret.identifier.DetailProductPage.DELETE_CART_ICON)) {
+            click(AppsConstant.LOCATOR_TYPE_ID, com.indomaret.klikindomaret.identifier.DetailProductPage.DELETE_CART_ICON);
+        }
+    }
 }

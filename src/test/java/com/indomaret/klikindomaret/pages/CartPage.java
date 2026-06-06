@@ -90,6 +90,8 @@ public class CartPage extends BasePage {
     }
 
     public void skipPromo() {
-        click(AppsConstant.LOCATOR_TYPE_ID, CartPageIdentifier.SKIP_PROMO);
+        if(isElementVisible(AppsConstant.LOCATOR_TYPE_ID, CartPageIdentifier.SKIP_PROMO)) {
+            click(AppsConstant.LOCATOR_TYPE_ID, CartPageIdentifier.SKIP_PROMO);
+        }
     }
 }

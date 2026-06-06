@@ -112,6 +112,7 @@ public class OrderKlikIndomaretVirtualAccountSteps extends ScenarioSteps {
 
     @And("User click add to cart in detail product page")
     public void userClickAddToCartInDetailProductPage() {
+        detailProductPage.deleteExistingCart();
         detailProductPage.clickAddToCart();
     }
 
