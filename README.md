@@ -69,4 +69,7 @@ The framework utilizes the **Page Object Model (POM)** and **Step Definition** d
 * `src/test/resources/features/` - *(If applicable)* Contains `.feature` files written in Gherkin syntax.
 
 ## ⚠️ Limitations & Known Issues
+
+https://github.com/user-attachments/assets/e1b17a01-914a-4811-8623-f1c2a9820161
+
 During the development of this automation suite, the target application experienced intermittent system instability and backend disturbances. Due to these external dependencies, full end-to-end assertions (reaching the absolute final payment confirmation pages) could not always be consistently verified. The framework itself is architected to handle the complete flow, but test executions may fail prematurely due to these unpredictable app-side issues.
