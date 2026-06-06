@@ -82,6 +82,7 @@ public class CartPage extends BasePage {
     }
 
     public void selectVirtualAccountPaymentBCA() {
+        scrollToElement("BRI Virtual Account");
         click(AppsConstant.LOCATOR_TYPE_ID, CartPageIdentifier.BRIVA);
     }
 
